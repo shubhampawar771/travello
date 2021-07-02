@@ -11,13 +11,12 @@
         {% csrf_token %}
         <input type="text" name="username" placeholder="username"><br>
         <input type="password" name="password" placeholder="password"><br>
-        <input type="Submit>><br>
+        <input type="Submit">
 </form>
 
 <div>
     {% for message in messages %}
-    <h3> {{mesage}} </h3>
+    <h3> {{message}} </h3>
     {% endfor %}
 </div>
-
 </html>
